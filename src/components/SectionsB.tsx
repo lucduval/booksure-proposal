@@ -46,9 +46,9 @@ export function RebuildSection() {
   return (
     <section id="rebuild" style={{ marginBottom: '5rem' }}>
       <p className="section-label">Section 4</p>
-      <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Phase 2 — Platform Rebuild</h2>
+      <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Phase 2: Platform Rebuild</h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 680 }}>
-        The rebuild eliminates accumulated technical debt, replaces 9 separate infrastructure systems with managed cloud services, and automatically resolves every security vulnerability found in Phase 1.
+        The rebuild will eliminate accumulated technical debt, replace 9 separate infrastructure systems with managed cloud services, and automatically resolve every security vulnerability I found in Phase 1.
       </p>
 
       {/* Why rebuild callout */}
@@ -60,10 +60,10 @@ export function RebuildSection() {
         <h3 style={{ fontWeight: 700, marginBottom: '1rem', color: PRIMARY }}>Why Rebuild vs. Stay on Legacy Stack?</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: '1rem' }}>
           {[
-            { icon: '↗', title: 'Faster Development', desc: 'Component-based React vs server-rendered Razor — UI changes that take days now take hours' },
+            { icon: '↗', title: 'Faster Development', desc: 'Component-based React vs server-rendered Razor. UI changes that take days now take hours' },
             { icon: '◆', title: 'Security by Default', desc: 'Clerk, Convex, and Vercel enforce tenant isolation, secret management, and MFA at the platform level' },
             { icon: '◈', title: 'Lower Running Costs', desc: 'Serverless eliminates Windows Server, SQL Server licensing, Redis, and CDN infrastructure' },
-            { icon: '▣', title: 'Modern UX', desc: 'Real-time updates replace 5-second polling — guests and staff see live availability instantly' },
+            { icon: '▣', title: 'Modern UX', desc: 'Real-time updates replace 5-second polling so guests and staff see live availability instantly' },
           ].map(item => (
             <div key={item.title} style={{ display: 'flex', gap: '0.75rem' }}>
               <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>{item.icon}</span>
@@ -78,7 +78,7 @@ export function RebuildSection() {
 
       {/* Operational overhead elimination chart */}
       <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
-        <h3 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>Operational Overhead — Legacy vs. Rebuilt</h3>
+        <h3 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>Operational Overhead: Legacy vs. Rebuilt</h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--muted-foreground)', marginBottom: '1.25rem' }}>
           Relative management burden per system (100 = high overhead, 0 = none)
         </p>
@@ -97,7 +97,7 @@ export function RebuildSection() {
 
       {/* Security radar */}
       <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
-        <h3 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>Security Posture — Legacy vs. Rebuilt</h3>
+        <h3 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>Security Posture: Legacy vs. Rebuilt</h3>
         <p style={{ fontSize: '0.8rem', color: 'var(--muted-foreground)', marginBottom: '1rem' }}>Score out of 100</p>
         <ResponsiveContainer width="100%" height={280}>
           <RadarChart data={securityImprovements}>

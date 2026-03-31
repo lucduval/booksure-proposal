@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Booksure — Technology Roadmap & Investment Proposal',
+  title: 'Booksure: Technology Roadmap & Investment Proposal',
   description: 'A comprehensive technology roadmap and investment proposal for the Booksure platform rebuild, outlining security hardening, financial gains, and platform modernisation.',
 };
 

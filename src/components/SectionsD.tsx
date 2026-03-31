@@ -10,7 +10,7 @@ const phase2Risks = [
   { risk: 'iVeri SDK has no REST API', likelihood: 'Medium', impact: 'High', mitigation: 'Investigate Week 1. Fallback: .NET microservice proxy or Peach Payments' },
   { risk: 'Booking.com requires sub-minute sync', likelihood: 'High', impact: 'Medium', mitigation: 'Convex self-scheduling functions achieve ~5–10s intervals' },
   { risk: 'Data migration loss or corruption', likelihood: 'Medium', impact: 'High', mitigation: 'Parallel systems, checksums, validation before cutover' },
-  { risk: 'Scope creep during rebuild', likelihood: 'High', impact: 'High', mitigation: 'Feature parity first — new features only after launch' },
+  { risk: 'Scope creep during rebuild', likelihood: 'High', impact: 'High', mitigation: 'Feature parity first, new features only after launch' },
   { risk: 'Business disruption at cutover', likelihood: 'Medium', impact: 'High', mitigation: 'Gradual traffic migration, instant rollback capability' },
 ];
 
@@ -30,12 +30,12 @@ export function RiskSection() {
       <p className="section-label">Section 8</p>
       <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Risk Analysis</h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 680 }}>
-        Key risks for the rebuild have been identified and mitigated. The greatest risk is <em>not rebuilding</em> — staying on .NET Framework 4.7.2 means mounting technical debt, increasing security exposure, and slower feature delivery every year.
+        I have identified the key risks for the rebuild and outlined mitigations for each. The greatest risk is <em>not rebuilding</em>. Staying on .NET Framework 4.7.2 means mounting technical debt, increasing security exposure, and slower feature delivery every year.
       </p>
 
       {/* Risk register */}
       <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
-        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>Phase 2 — Rebuild Risk Register</h3>
+        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>Phase 2: Rebuild Risk Register</h3>
         <div style={{ overflowX: 'auto' }}>
           <table className="proposal-table">
             <thead><tr><th>Risk</th><th>Likelihood</th><th>Impact</th><th>Mitigation</th></tr></thead>
@@ -90,8 +90,8 @@ export function RecommendationSection() {
       color: DANGER,
       icon: '●',
       actions: [
-        'Execute Phase 1 P0 immediately — fix 4 cross-tenant vulnerabilities and replace sa database user. 1–2 days work.',
-        'Begin credential rotation planning — all secrets in git history must be treated as compromised.',
+        'Execute Phase 1 P0 immediately. Fix 4 cross-tenant vulnerabilities and replace sa database user. 1–2 days work.',
+        'Begin credential rotation planning. All secrets in git history must be treated as compromised.',
       ],
     },
     {
@@ -99,7 +99,7 @@ export function RecommendationSection() {
       color: '#ea580c',
       icon: '◆',
       actions: [
-        'Complete Phase 1 security hardening — either in-house or engage TCG with the specific findings from this analysis.',
+        'Complete Phase 1 security hardening, either in-house or by engaging TCG with the specific findings from this analysis.',
         'Proceed with penetration testing after fixes are deployed. Validates the hardening work.',
       ],
     },
@@ -108,8 +108,8 @@ export function RecommendationSection() {
       color: PRIMARY,
       icon: '▸',
       actions: [
-        'Proceed with Phase 2 rebuild — every month of development on the legacy stack is investment into a depreciating asset.',
-        'Start with iVeri API investigation in Week 1 — highest-risk unknown that must be resolved to unblock payments.',
+        'Proceed with Phase 2 rebuild. Every month of development on the legacy stack is investment into a depreciating asset.',
+        'Start with iVeri API investigation in Week 1. This is the highest-risk unknown that must be resolved to unblock payments.',
         'Run Phase 1 and Phase 2 in parallel from Weeks 3–24. No business disruption until deliberate cutover.',
       ],
     },
@@ -120,7 +120,7 @@ export function RecommendationSection() {
       <p className="section-label">Section 9</p>
       <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Recommendation</h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 680 }}>
-        The current platform is operationally viable but financially and technically depreciating. The rebuild is not a risk — it is the risk mitigation strategy.
+        I believe the current platform is operationally viable but financially and technically depreciating. The rebuild is not a risk. It is the risk mitigation strategy.
       </p>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem', marginBottom: '2.5rem' }}>

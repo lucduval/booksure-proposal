@@ -45,13 +45,13 @@ const phases = [
     features: [
       {
         title: 'AI Guest Communications',
-        desc: 'Automatically generate personalised booking confirmations, pre-arrival briefings, and post-stay thank-you messages. Each message is tailored to the guest\'s name, stay details, and the establishment\'s tone — not generic templates.',
+        desc: 'Automatically generate personalised booking confirmations, pre-arrival briefings, and post-stay thank-you messages. Each message is tailored to the guest\'s name, stay details, and the establishment\'s tone, not generic templates.',
         value: 'Reduces manual email time. Increases 5-star review rates.',
         icon: '▷',
       },
       {
         title: 'Review Response Generator',
-        desc: 'AI drafts responses to Booking.com and Google reviews — positive and negative — for a staff member to approve and post. Responses reflect the establishment\'s voice and address specific points in each review.',
+        desc: 'AI drafts responses to Booking.com and Google reviews, both positive and negative, for a staff member to approve and post. Responses reflect the establishment\'s voice and address specific points in each review.',
         value: 'Increases review engagement. Improves OTA ranking signals.',
         icon: '✦',
       },
@@ -79,7 +79,7 @@ const phases = [
       },
       {
         title: 'Call Centre AI Assist',
-        desc: 'A real-time assistant panel for call centre agents. As a call is in progress, the AI surfaces the caller\'s booking history, suggests availability options, and drafts hold messages or follow-up emails. Agents confirm and send — they don\'t type from scratch.',
+        desc: 'A real-time assistant panel for call centre agents. As a call is in progress, the AI surfaces the caller\'s booking history, suggests availability options, and drafts hold messages or follow-up emails. Agents confirm and send instead of typing from scratch.',
         value: 'Reduces average handling time. Improves first-call resolution rate.',
         icon: '◎',
       },
@@ -101,19 +101,19 @@ const phases = [
     features: [
       {
         title: 'Natural Language Booking Search',
-        desc: 'Guests type a plain-language request — "a quiet guest house near the Drakensberg for two adults, private bathroom, under R1,200 a night" — and the platform returns ranked, matching properties. No form fields, no filters to configure.',
+        desc: 'Guests type a plain-language request like "a quiet guest house near the Drakensberg for two adults, private bathroom, under R1,200 a night" and the platform returns ranked, matching properties. No form fields, no filters to configure.',
         value: 'Material improvement in guest conversion. A feature no South African competitor currently offers.',
         icon: '◎',
       },
       {
         title: 'Revenue Intelligence Dashboard',
-        desc: 'Each establishment receives a monthly AI-generated performance summary: occupancy vs comparable properties, revenue per available room, channel performance breakdown, and 2–3 specific action recommendations — all in plain language, not raw data.',
+        desc: 'Each establishment receives a monthly AI-generated performance summary: occupancy vs comparable properties, revenue per available room, channel performance breakdown, and 2–3 specific action recommendations, all in plain language, not raw data.',
         value: 'Turns Booksure into a strategic partner for establishments, not just a booking tool.',
         icon: '▥',
       },
       {
         title: 'Anomaly & Fraud Detection',
-        desc: 'Continuous monitoring of booking and payment patterns. Flags unusual activity — a sudden spike in same-day cancellations, repeated card failures from the same device, or booking patterns inconsistent with a property\'s history — before losses occur.',
+        desc: 'Continuous monitoring of booking and payment patterns. Flags unusual activity like a sudden spike in same-day cancellations, repeated card failures from the same device, or booking patterns inconsistent with a property\'s history, before losses occur.',
         value: 'Reduces chargeback exposure. Protects both Booksure and its establishments.',
         icon: '◆',
       },
@@ -131,7 +131,7 @@ export function AIStrategySection() {
         AI Strategy
       </h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 680 }}>
-        The rebuilt platform is not just a cost reduction — it is the foundation for AI. The legacy stack cannot support these capabilities. The new stack is built for them.
+        The rebuilt platform is not just a cost reduction. It is the foundation for AI. The legacy stack cannot support these capabilities. I have designed the new stack specifically for them.
       </p>
 
       {/* Why the rebuilt stack enables AI */}
@@ -145,9 +145,9 @@ export function AIStrategySection() {
         </h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: '1rem' }}>
           {[
-            { icon: '↗', title: 'Real-Time Data', desc: 'Convex streams live booking data to AI models. The legacy SQL Server cannot stream — it only responds to queries.' },
+            { icon: '↗', title: 'Real-Time Data', desc: 'Convex streams live booking data to AI models. The legacy SQL Server cannot stream. It only responds to queries.' },
             { icon: '◎', title: 'API-First Architecture', desc: 'Next.js API routes integrate with OpenAI, Anthropic, and any AI service in minutes. The legacy ASP.NET stack requires weeks of scaffolding.' },
-            { icon: '▣', title: 'Vector-Ready Database', desc: 'Convex supports vector search natively — the backbone of semantic search and AI recommendations. SQL Server does not.' },
+            { icon: '▣', title: 'Vector-Ready Database', desc: 'Convex supports vector search natively, the backbone of semantic search and AI recommendations. SQL Server does not.' },
             { icon: '◆', title: 'Secure by Default', desc: 'AI features require passing guest data to external models. Clerk and Convex enforce data isolation rules that protect this. The legacy stack does not.' },
           ].map(item => (
             <div key={item.title} style={{ display: 'flex', gap: '0.75rem' }}>
@@ -262,7 +262,7 @@ export function AIStrategySection() {
 
       {/* Priority matrix table */}
       <div className="card" style={{ padding: '1.5rem', marginTop: '1.5rem' }}>
-        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>AI Roadmap — Priority Matrix</h3>
+        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>AI Roadmap: Priority Matrix</h3>
         <div style={{ overflowX: 'auto' }}>
           <table className="proposal-table">
             <thead>

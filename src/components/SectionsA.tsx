@@ -38,7 +38,7 @@ export function CoverSection() {
           Building the Future<br />of Booksure
         </h1>
         <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.8)', maxWidth: 560, lineHeight: 1.75, marginBottom: '2rem' }}>
-          A two-phase investment plan to secure the current platform and rebuild on modern infrastructure — reducing costs, accelerating growth, and eliminating technical debt.
+          A two-phase investment plan I am proposing to secure the current platform and rebuild on modern infrastructure, reducing costs, accelerating growth, and eliminating technical debt.
         </p>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           {[
@@ -96,7 +96,7 @@ export function AssessmentSection() {
       <p className="section-label">Section 2</p>
       <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Current Platform Assessment</h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 640 }}>
-        The existing ASP.NET MVC 5 platform carries significant technical debt across its entire stack. Seven critical or high-severity security vulnerabilities were identified, alongside architectural limitations that slow development velocity.
+        The existing ASP.NET MVC 5 platform carries significant technical debt across its entire stack. I have identified seven critical or high-severity security vulnerabilities, alongside architectural limitations that slow development velocity.
       </p>
 
       {/* Scale stats */}
@@ -150,7 +150,7 @@ export function AssessmentSection() {
 
       {/* Tech stack chart */}
       <div className="card" style={{ padding: '1.5rem' }}>
-        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>Platform Scale — Technical Debt Indicators</h3>
+        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>Platform Scale: Technical Debt Indicators</h3>
         <ResponsiveContainer width="100%" height={220}>
           <BarChart data={techDebtData} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
@@ -172,18 +172,18 @@ export function AssessmentSection() {
 /* ─── Security Phase Section ────────────────────────── */
 export function SecuritySection() {
   const phases = [
-    { label: 'P0 — Immediate', color: DANGER, items: ['Fix 4 cross-tenant data access vulnerabilities', 'Replace sa database user with least-privilege account'] },
-    { label: 'P1 — Critical', color: '#ea580c', items: ['Account lockout & brute-force protection', 'Server-side password validation', 'Move all secrets out of source control & rotate credentials'] },
-    { label: 'P2 — Important', color: '#d97706', items: ['Cloudflare WAF implementation', 'Security headers & IIS hardening', 'Firewall port restriction'] },
-    { label: 'P3 — Recommended', color: PRIMARY, items: ['Email OTP for sensitive actions', 'Dependency vulnerability scan & upgrades', 'Endpoint security review', 'Third-party risk documentation'] },
+    { label: 'P0: Immediate', color: DANGER, items: ['Fix 4 cross-tenant data access vulnerabilities', 'Replace sa database user with least-privilege account'] },
+    { label: 'P1: Critical', color: '#ea580c', items: ['Account lockout & brute-force protection', 'Server-side password validation', 'Move all secrets out of source control & rotate credentials'] },
+    { label: 'P2: Important', color: '#d97706', items: ['Cloudflare WAF implementation', 'Security headers & IIS hardening', 'Firewall port restriction'] },
+    { label: 'P3: Recommended', color: PRIMARY, items: ['Email OTP for sensitive actions', 'Dependency vulnerability scan & upgrades', 'Endpoint security review', 'Third-party risk documentation'] },
   ];
 
   return (
     <section id="security" style={{ marginBottom: '5rem' }}>
       <p className="section-label">Section 3</p>
-      <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Phase 1 — Security Hardening</h2>
+      <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Phase 1: Security Hardening</h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 640 }}>
-        Critical vulnerabilities must be addressed immediately regardless of the rebuild decision. This phase protects the business and its customers now.
+        I recommend addressing these critical vulnerabilities immediately regardless of the rebuild decision. This phase protects the business and its customers now.
       </p>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: '1rem' }}>

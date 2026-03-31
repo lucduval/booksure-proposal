@@ -37,7 +37,7 @@ export function InvestmentSection() {
       <p className="section-label">Section 6</p>
       <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>Investment & Monthly Savings</h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 680 }}>
-        At a fixed investment of <strong>R50,000</strong>, the rebuild replaces high-overhead, on-premise infrastructure with lean managed services — cutting monthly operational costs by an estimated R4,000–R10,000 per month and paying back the investment within the first year.
+        At a fixed investment of <strong>R50,000</strong>, the rebuild replaces high-overhead, on-premise infrastructure with lean managed services, cutting monthly operational costs by an estimated R4,000–R10,000 per month and paying back the investment within the first year.
       </p>
 
       {/* Savings headline */}
@@ -80,7 +80,7 @@ export function InvestmentSection() {
 
       {/* Platform costs table */}
       <div className="card" style={{ padding: '1.5rem' }}>
-        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>New Platform — Monthly Service Costs</h3>
+        <h3 style={{ fontWeight: 700, marginBottom: '1.25rem' }}>New Platform: Monthly Service Costs</h3>
         <table className="proposal-table">
           <thead><tr><th>Service</th><th>Plan</th><th>Monthly Cost</th></tr></thead>
           <tbody>
@@ -125,7 +125,7 @@ export function TCOSection() {
       <p className="section-label">Section 7</p>
       <h2 className="font-serif" style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '0.75rem' }}>5-Year Total Cost of Ownership</h2>
       <p style={{ fontSize: '0.925rem', color: 'var(--muted-foreground)', lineHeight: 1.75, marginBottom: '2rem', maxWidth: 680 }}>
-        At a total rebuild investment of <strong>R50,000</strong>, the platform is cheaper than the legacy stack from Year 1 — generating over <strong>R380k in cumulative savings</strong> across 5 years.
+        At a total rebuild investment of <strong>R50,000</strong>, the platform is cheaper than the legacy stack from Year 1, generating over <strong>R380k in cumulative savings</strong> across 5 years.
       </p>
 
       {/* 5-year summary cards */}
@@ -156,7 +156,7 @@ export function TCOSection() {
       {/* Cumulative TCO chart */}
       <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
         <h3 style={{ fontWeight: 700, marginBottom: '0.5rem' }}>Cumulative Total Cost of Ownership (ZAR)</h3>
-        <p style={{ fontSize: '0.8rem', color: 'var(--muted-foreground)', marginBottom: '1.25rem' }}>Rebuilt stack is cheaper from Year 1 — R50k total investment</p>
+        <p style={{ fontSize: '0.8rem', color: 'var(--muted-foreground)', marginBottom: '1.25rem' }}>Rebuilt stack is cheaper from Year 1. R50k total investment</p>
         <ResponsiveContainer width="100%" height={280}>
           <AreaChart data={tcoData} margin={{ top: 5, right: 20, left: 20, bottom: 5 }}>
             <defs>
