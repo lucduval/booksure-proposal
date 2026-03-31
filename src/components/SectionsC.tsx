@@ -46,10 +46,10 @@ export function InvestmentSection() {
         gap: '1rem', marginBottom: '2rem',
       }}>
         {[
-          { label: 'Total Rebuild Investment', value: 'R50,000', color: PRIMARY, icon: '🏗️' },
-          { label: 'Current Est. Monthly Cost', value: 'R7k–R13k', color: DANGER, icon: '📉' },
-          { label: 'Rebuilt Monthly Cost', value: '~R2,800', color: SUCCESS, icon: '📈' },
-          { label: 'Monthly Saving', value: 'R4k–R10k', color: PRIMARY, icon: '💰' },
+          { label: 'Total Rebuild Investment', value: 'R50,000', color: PRIMARY, icon: '△' },
+          { label: 'Current Est. Monthly Cost', value: 'R7k–R13k', color: DANGER, icon: '▽' },
+          { label: 'Rebuilt Monthly Cost', value: '~R2,800', color: SUCCESS, icon: '▲' },
+          { label: 'Monthly Saving', value: 'R4k–R10k', color: PRIMARY, icon: '◈' },
         ].map(item => (
           <div key={item.label} className="stat-card" style={{ borderTop: `3px solid ${item.color}` }}>
             <span style={{ fontSize: '1.5rem' }}>{item.icon}</span>

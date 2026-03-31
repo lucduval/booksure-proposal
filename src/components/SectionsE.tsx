@@ -39,7 +39,7 @@ const phases = [
     phase: 'Phase A',
     timeline: 'Months 1–6 · Post-Rebuild',
     color: SUCCESS,
-    icon: '⚡',
+    icon: '↗',
     label: 'Quick Wins',
     desc: 'Low effort, high-value automations that run on top of the new platform immediately.',
     features: [
@@ -47,19 +47,19 @@ const phases = [
         title: 'AI Guest Communications',
         desc: 'Automatically generate personalised booking confirmations, pre-arrival briefings, and post-stay thank-you messages. Each message is tailored to the guest\'s name, stay details, and the establishment\'s tone — not generic templates.',
         value: 'Reduces manual email time. Increases 5-star review rates.',
-        icon: '✉️',
+        icon: '▷',
       },
       {
         title: 'Review Response Generator',
         desc: 'AI drafts responses to Booking.com and Google reviews — positive and negative — for a staff member to approve and post. Responses reflect the establishment\'s voice and address specific points in each review.',
         value: 'Increases review engagement. Improves OTA ranking signals.',
-        icon: '⭐',
+        icon: '✦',
       },
       {
         title: 'Listing Optimiser',
         desc: 'AI analyses each establishment\'s property description, photo count, and amenity listing against top-performing competitors on Booking.com. Produces a ranked list of specific improvements with suggested copy.',
         value: 'Higher click-through and conversion rate on OTA channels.',
-        icon: '📝',
+        icon: '▤',
       },
     ],
   },
@@ -67,7 +67,7 @@ const phases = [
     phase: 'Phase B',
     timeline: 'Months 6–12',
     color: PRIMARY,
-    icon: '🧠',
+    icon: '◈',
     label: 'Intelligence Layer',
     desc: 'Data-driven features that learn from Booksure\'s booking history and surface actionable insights.',
     features: [
@@ -75,19 +75,19 @@ const phases = [
         title: 'Smart Pricing Suggestions',
         desc: 'AI analyses historical occupancy patterns in Convex, upcoming local events, and seasonal demand to suggest optimal nightly rates per establishment. Alerts are sent when a property appears under- or over-priced relative to its own history.',
         value: 'Direct revenue uplift. Properties typically see 8–15% RevPAR improvement.',
-        icon: '💡',
+        icon: '◇',
       },
       {
         title: 'Call Centre AI Assist',
         desc: 'A real-time assistant panel for call centre agents. As a call is in progress, the AI surfaces the caller\'s booking history, suggests availability options, and drafts hold messages or follow-up emails. Agents confirm and send — they don\'t type from scratch.',
         value: 'Reduces average handling time. Improves first-call resolution rate.',
-        icon: '🎧',
+        icon: '◎',
       },
       {
         title: 'Occupancy Forecasting',
         desc: 'Predicts 30, 60, and 90-day occupancy for each establishment based on historical data, current booking pace, and seasonal patterns. Establishments can use forecasts to trigger early-bird promotions or adjust staffing before the need arises.',
         value: 'Smarter staffing and marketing spend decisions made weeks in advance.',
-        icon: '📅',
+        icon: '▥',
       },
     ],
   },
@@ -95,7 +95,7 @@ const phases = [
     phase: 'Phase C',
     timeline: 'Months 12–24',
     color: ACCENT,
-    icon: '🚀',
+    icon: '▸',
     label: 'Competitive Edge',
     desc: 'Platform-level AI features that differentiate Booksure from other booking management systems.',
     features: [
@@ -103,19 +103,19 @@ const phases = [
         title: 'Natural Language Booking Search',
         desc: 'Guests type a plain-language request — "a quiet guest house near the Drakensberg for two adults, private bathroom, under R1,200 a night" — and the platform returns ranked, matching properties. No form fields, no filters to configure.',
         value: 'Material improvement in guest conversion. A feature no South African competitor currently offers.',
-        icon: '🔍',
+        icon: '◎',
       },
       {
         title: 'Revenue Intelligence Dashboard',
         desc: 'Each establishment receives a monthly AI-generated performance summary: occupancy vs comparable properties, revenue per available room, channel performance breakdown, and 2–3 specific action recommendations — all in plain language, not raw data.',
         value: 'Turns Booksure into a strategic partner for establishments, not just a booking tool.',
-        icon: '📊',
+        icon: '▥',
       },
       {
         title: 'Anomaly & Fraud Detection',
         desc: 'Continuous monitoring of booking and payment patterns. Flags unusual activity — a sudden spike in same-day cancellations, repeated card failures from the same device, or booking patterns inconsistent with a property\'s history — before losses occur.',
         value: 'Reduces chargeback exposure. Protects both Booksure and its establishments.',
-        icon: '🛡️',
+        icon: '◆',
       },
     ],
   },
@@ -145,10 +145,10 @@ export function AIStrategySection() {
         </h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: '1rem' }}>
           {[
-            { icon: '⚡', title: 'Real-Time Data', desc: 'Convex streams live booking data to AI models. The legacy SQL Server cannot stream — it only responds to queries.' },
-            { icon: '🔌', title: 'API-First Architecture', desc: 'Next.js API routes integrate with OpenAI, Anthropic, and any AI service in minutes. The legacy ASP.NET stack requires weeks of scaffolding.' },
-            { icon: '📦', title: 'Vector-Ready Database', desc: 'Convex supports vector search natively — the backbone of semantic search and AI recommendations. SQL Server does not.' },
-            { icon: '🔐', title: 'Secure by Default', desc: 'AI features require passing guest data to external models. Clerk and Convex enforce data isolation rules that protect this. The legacy stack does not.' },
+            { icon: '↗', title: 'Real-Time Data', desc: 'Convex streams live booking data to AI models. The legacy SQL Server cannot stream — it only responds to queries.' },
+            { icon: '◎', title: 'API-First Architecture', desc: 'Next.js API routes integrate with OpenAI, Anthropic, and any AI service in minutes. The legacy ASP.NET stack requires weeks of scaffolding.' },
+            { icon: '▣', title: 'Vector-Ready Database', desc: 'Convex supports vector search natively — the backbone of semantic search and AI recommendations. SQL Server does not.' },
+            { icon: '◆', title: 'Secure by Default', desc: 'AI features require passing guest data to external models. Clerk and Convex enforce data isolation rules that protect this. The legacy stack does not.' },
           ].map(item => (
             <div key={item.title} style={{ display: 'flex', gap: '0.75rem' }}>
               <span style={{ fontSize: '1.25rem', flexShrink: 0 }}>{item.icon}</span>

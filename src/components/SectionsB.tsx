@@ -60,10 +60,10 @@ export function RebuildSection() {
         <h3 style={{ fontWeight: 700, marginBottom: '1rem', color: PRIMARY }}>Why Rebuild vs. Stay on Legacy Stack?</h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: '1rem' }}>
           {[
-            { icon: '⚡', title: 'Faster Development', desc: 'Component-based React vs server-rendered Razor — UI changes that take days now take hours' },
-            { icon: '🔐', title: 'Security by Default', desc: 'Clerk, Convex, and Vercel enforce tenant isolation, secret management, and MFA at the platform level' },
-            { icon: '💸', title: 'Lower Running Costs', desc: 'Serverless eliminates Windows Server, SQL Server licensing, Redis, and CDN infrastructure' },
-            { icon: '📱', title: 'Modern UX', desc: 'Real-time updates replace 5-second polling — guests and staff see live availability instantly' },
+            { icon: '↗', title: 'Faster Development', desc: 'Component-based React vs server-rendered Razor — UI changes that take days now take hours' },
+            { icon: '◆', title: 'Security by Default', desc: 'Clerk, Convex, and Vercel enforce tenant isolation, secret management, and MFA at the platform level' },
+            { icon: '◈', title: 'Lower Running Costs', desc: 'Serverless eliminates Windows Server, SQL Server licensing, Redis, and CDN infrastructure' },
+            { icon: '▣', title: 'Modern UX', desc: 'Real-time updates replace 5-second polling — guests and staff see live availability instantly' },
           ].map(item => (
             <div key={item.title} style={{ display: 'flex', gap: '0.75rem' }}>
               <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>{item.icon}</span>
@@ -142,10 +142,10 @@ export function RebuildSection() {
 /* ─── Architecture Section ──────────────────────────── */
 export function ArchitectureSection() {
   const layers = [
-    { label: 'Users', items: ['Establishments', 'Call Centre Staff', 'Guests'], color: PRIMARY_LIGHT, icon: '👤' },
-    { label: 'Vercel Edge Network', items: ['CDN', 'DDoS Protection', 'SSL', 'Image Optimisation'], color: PRIMARY, icon: '🌐' },
-    { label: 'Next.js Application', items: ['Public Site', 'Est. Dashboard', 'Guest Portal', 'Call Centre', 'API Routes'], color: PRIMARY_DARK, icon: '⚛️' },
-    { label: 'Services Layer', items: ['Clerk (Auth)', 'Convex (DB + Realtime)', 'iVeri + PayFast', 'Booking.com', 'BulkSMS', 'Resend'], color: '#133f60', icon: '🔧' },
+    { label: 'Users', items: ['Establishments', 'Call Centre Staff', 'Guests'], color: PRIMARY_LIGHT, icon: '○' },
+    { label: 'Vercel Edge Network', items: ['CDN', 'DDoS Protection', 'SSL', 'Image Optimisation'], color: PRIMARY, icon: '◉' },
+    { label: 'Next.js Application', items: ['Public Site', 'Est. Dashboard', 'Guest Portal', 'Call Centre', 'API Routes'], color: PRIMARY_DARK, icon: '✧' },
+    { label: 'Services Layer', items: ['Clerk (Auth)', 'Convex (DB + Realtime)', 'iVeri + PayFast', 'Booking.com', 'BulkSMS', 'Resend'], color: '#133f60', icon: '◆' },
   ];
 
   return (

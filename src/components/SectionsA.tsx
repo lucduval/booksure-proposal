@@ -60,10 +60,10 @@ export function CoverSection() {
       {/* Executive summary cards */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: '1rem', marginTop: '2rem' }}>
         {[
-          { icon: '🔒', label: 'Phase 1', title: 'Security Hardening', desc: 'Fix critical vulnerabilities on the current platform immediately', color: DANGER },
-          { icon: '🚀', label: 'Phase 2', title: 'Platform Rebuild', desc: 'Rewrite on Next.js + Convex + Clerk for the long term', color: PRIMARY },
-          { icon: '💰', label: 'Savings', title: 'R4k–R10k/month', desc: 'Estimated monthly operational cost reduction post-rebuild', color: SUCCESS },
-          { icon: '📈', label: '5-Year', title: 'R380k saved', desc: 'Total cost of ownership advantage over staying on legacy stack', color: PRIMARY_DARK },
+          { icon: '◆', label: 'Phase 1', title: 'Security Hardening', desc: 'Fix critical vulnerabilities on the current platform immediately', color: DANGER },
+          { icon: '▸', label: 'Phase 2', title: 'Platform Rebuild', desc: 'Rewrite on Next.js + Convex + Clerk for the long term', color: PRIMARY },
+          { icon: '◈', label: 'Savings', title: 'R4k–R10k/month', desc: 'Estimated monthly operational cost reduction post-rebuild', color: SUCCESS },
+          { icon: '△', label: '5-Year', title: 'R380k saved', desc: 'Total cost of ownership advantage over staying on legacy stack', color: PRIMARY_DARK },
         ].map(item => (
           <div key={item.label} className="stat-card" style={{ cursor: 'default' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
@@ -112,7 +112,7 @@ export function AssessmentSection() {
       {/* Security vulnerabilities */}
       <div className="card" style={{ padding: '1.5rem', marginBottom: '1.5rem' }}>
         <h3 style={{ fontWeight: 700, marginBottom: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <span>🔴</span> Security Vulnerabilities Identified
+          <span>●</span> Security Vulnerabilities Identified
         </h3>
         <div style={{ overflowX: 'auto' }}>
           <table className="proposal-table">

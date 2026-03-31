@@ -59,7 +59,7 @@ export function RiskSection() {
         borderRadius: '0.75rem', padding: '1.5rem',
       }}>
         <h3 style={{ fontWeight: 700, color: DANGER, marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <span>⚠️</span> The Risk of NOT Rebuilding
+          <span>◬</span> The Risk of NOT Rebuilding
         </h3>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: '1rem' }}>
           {[
@@ -88,7 +88,7 @@ export function RecommendationSection() {
     {
       phase: 'This Week',
       color: DANGER,
-      icon: '🚨',
+      icon: '●',
       actions: [
         'Execute Phase 1 P0 immediately — fix 4 cross-tenant vulnerabilities and replace sa database user. 1–2 days work.',
         'Begin credential rotation planning — all secrets in git history must be treated as compromised.',
@@ -97,7 +97,7 @@ export function RecommendationSection() {
     {
       phase: 'Next 4 Weeks',
       color: '#ea580c',
-      icon: '🔒',
+      icon: '◆',
       actions: [
         'Complete Phase 1 security hardening — either in-house or engage TCG with the specific findings from this analysis.',
         'Proceed with penetration testing after fixes are deployed. Validates the hardening work.',
@@ -106,7 +106,7 @@ export function RecommendationSection() {
     {
       phase: 'Following 5–6 Months',
       color: PRIMARY,
-      icon: '🚀',
+      icon: '▸',
       actions: [
         'Proceed with Phase 2 rebuild — every month of development on the legacy stack is investment into a depreciating asset.',
         'Start with iVeri API investigation in Week 1 — highest-risk unknown that must be resolved to unblock payments.',

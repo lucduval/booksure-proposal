@@ -3,15 +3,15 @@
 import { useState } from 'react';
 
 const navSections = [
-  { id: 'cover', label: 'Overview', icon: '🏠' },
-  { id: 'assessment', label: 'Platform Assessment', icon: '🔍' },
-  { id: 'security', label: 'Security Hardening', icon: '🔒' },
-  { id: 'rebuild', label: 'Platform Rebuild', icon: '🚀' },
-  { id: 'architecture', label: 'Target Architecture', icon: '🏗️' },
-  { id: 'investment', label: 'Investment & ROI', icon: '💰' },
-  { id: 'tco', label: '5-Year Cost Analysis', icon: '📊' },
-  { id: 'risk', label: 'Risk Analysis', icon: '⚠️' },
-  { id: 'recommendation', label: 'Recommendation', icon: '✅' },
+  { id: 'cover', label: 'Overview', icon: '◇' },
+  { id: 'assessment', label: 'Platform Assessment', icon: '◎' },
+  { id: 'security', label: 'Security Hardening', icon: '◆' },
+  { id: 'rebuild', label: 'Platform Rebuild', icon: '▸' },
+  { id: 'architecture', label: 'Target Architecture', icon: '△' },
+  { id: 'investment', label: 'Investment & ROI', icon: '◈' },
+  { id: 'tco', label: '5-Year Cost Analysis', icon: '▥' },
+  { id: 'risk', label: 'Risk Analysis', icon: '◬' },
+  { id: 'recommendation', label: 'Recommendation', icon: '✓' },
   { id: 'ai', label: 'AI Strategy', icon: '✦' },
 ];
 
